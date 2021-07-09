@@ -12,24 +12,23 @@
         <ul *ngFor="let becarios of becariosArray">
             <div *ngIf="becarios.id">
             <li>
-                <span > ID: {{becarios.id}}</span>
+                <span> ID: {{becarios.id}}</span>
             </li>
             <li *ngIf="becarios.puesto">
-                <span >NOMBRE: {{becarios.puesto}}</span>
+                <span>NOMBRE: {{becarios.puesto}}</span>
             </li>   
             <li *ngIf="becarios.horario">
-                <span >HORARIO: {{becarios.horario}}</span>
+                <span>HORARIO: {{becarios.horario}}</span>
             </li> 
             <li *ngIf="becarios.fechaAlta">
-                <span >FECHA DE ALTA: {{becarios.fechaAlta}}</span>
+                <span>FECHA DE ALTA: {{becarios.fechaAlta}}</span>
             </li>   
             
-             <div *ngIf="becarios.responsables">
-                <div *ngFor="let becariosResponsables of becarios.responsables">
-                    <span>{{becariosResponsables}}</span>
+                <div *ngIf="becarios.responsables">
+                    <div *ngFor="let becariosResponsables of becarios.responsables">
+                        <span>{{becariosResponsables}}</span>
+                    </div>
                 </div>
-                
-            </div>
             </div>  
         </ul>
   
