@@ -24,7 +24,7 @@ router.get("/:id",(req, res)=>{
 
 router.get("/salary/:salary",(req, res)=>{
     const { salary }= req.params;
-    mysql_conection.query(`SELECT * FROM EMPLEADOS WHERE SALARY = ${salary}`,(err,rows,fields)=>{
+    mysql_conection.query(`SELECT * FROM EMPLEADOS WHERE SALARY >= ${salary}`,(err,rows,fields)=>{
         if(!err){
             res.json(rows);
         }else{
