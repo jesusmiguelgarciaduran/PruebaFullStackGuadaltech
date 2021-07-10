@@ -1,0 +1,17 @@
+html{
+    padding:0%;
+    margin:0%;
+}
+
+table{
+    width:70%;
+    text-align:center;
+    margin:0% 15% 0% 15%;
+}
+table td{
+    border: 1px solid black;
+}
+table th{
+    background-color: wheat;
+    border: 1px solid black;
+}

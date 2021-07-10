@@ -3,6 +3,6 @@ export class Becarios{
     nombre?:string;
     puesto?:string;
     horario?:string;
-    fechaAlta?:string;
+    fechaalta?:string;
     responsables?:string[] ;
 }

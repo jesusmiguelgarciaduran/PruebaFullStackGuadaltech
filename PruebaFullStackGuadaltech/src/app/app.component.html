@@ -5,33 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="app.component.css" type="text/css">
+    <link rel="stylesheet" href="app.component.css" type="text/css">    
 </head>
 <body>
-    
-        <ul *ngFor="let becarios of becariosArray">
-            <div *ngIf="becarios.id">
-            <li>
-                <span> ID: {{becarios.id}}</span>
-            </li>
-            <li *ngIf="becarios.puesto">
-                <span>NOMBRE: {{becarios.puesto}}</span>
-            </li>   
-            <li *ngIf="becarios.horario">
-                <span>HORARIO: {{becarios.horario}}</span>
-            </li> 
-            <li *ngIf="becarios.fechaAlta">
-                <span>FECHA DE ALTA: {{becarios.fechaAlta}}</span>
-            </li>   
-            
-                <div *ngIf="becarios.responsables">
-                    <div *ngFor="let becariosResponsables of becarios.responsables">
-                        <span>{{becariosResponsables}}</span>
-                    </div>
+    <table class="table table-hover">
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                NOMBRE
+            </th>
+            <th>
+                HORARIO
+            </th>
+            <th>
+                FECHA DE ALTA
+            </th>
+            <th>
+                RESPONSABLES
+            </th>
+        </tr>
+        <tr *ngFor="let becarios of becariosArray">
+            <td >
+                {{becarios.id}}
+            </td>
+            <td >
+                {{becarios.puesto}}
+            </td>
+            <td >
+                {{becarios.horario}}
+            </td>
+            <td >
+                {{becarios.fechaalta}}
+            </td>
+            <td >
+                <div *ngFor="let becariosResponsables of becarios.responsables">
+                    {{becariosResponsables}}
                 </div>
-            </div>  
-        </ul>
-  
-   
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
