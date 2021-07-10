@@ -3,7 +3,8 @@ const app =express();
 const morgan=require('morgan');
 
 //Configuraciones
-app.set('port',proces.env.PORT || 4000);
+app.set('port',process.env.PORT || 4000);
+app.set('json spaces',2)
 
 //Middleware
 app.use(morgan('dev'));
@@ -11,9 +12,7 @@ app.use(express.urlencoded({extended:false}));
 app.use(express.json());
 
 //Rutas
-app.get('/',(req,res)=>{
-    res.send("hola");
-});
+app.use(require('./routes/index'));
 
 //Inicio del servidor
 app.listen(app.get('port'),()=>{
