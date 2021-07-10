@@ -1,0 +1,27 @@
+{
+  "name": "PruebaFullStackGuadaltech",
+  "version": "1.0.0",
+  "description": "Este repositorio es para la prueba previa a la entrevista de trabajo con la empresa Guadaltech",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon PruebaFullStackGuadaltechNode/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesusmiguelgarciaduran/PruebaFullStackGuadaltech.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jesusmiguelgarciaduran/PruebaFullStackGuadaltech/issues"
+  },
+  "homepage": "https://github.com/jesusmiguelgarciaduran/PruebaFullStackGuadaltech#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.11"
+  }
+}
