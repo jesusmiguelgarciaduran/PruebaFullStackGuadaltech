@@ -3,10 +3,10 @@ const mysql=require('mysql');
 const mysql_conection=mysql.createConnection({
     host:'localhost',
     user:'root',
-    password:'root',
-    database:'EMPLEADOS'
+    password:'',
+    database:'GUADALTECH'
 });
-mysql_conection.conection(function(error){
+mysql_conection.connect(function(error){
     if(error){
         console.log(error);
         return;
